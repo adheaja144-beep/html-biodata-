@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <title>Biodata | Maulana Adhe Andriansyah</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+    href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@300;400;600&display=swap">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR (fixed) -->
+<nav class="navbar">
+  <a href="#home" class="logo">NK<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#skills">Skill</a></li>
+    <li><a href="#education">Pendidikan</a></li>
+    <li><a href="#experience">Pengalaman</a></li>
+    <li><a href="#hobby">Hobi</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+  <div class="nav-actions">
+    <!-- Tombol dark/light mode -->
+    <button id="themeBtn" class="icon-btn">
+      <i class="fa-solid fa-sun"></i>
+    </button>
+    <!-- Tombol menu (HP) -->
+    <button id="menuBtn" class="icon-btn menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="home" class="hero fade-in">
+  <!-- Foto: simpan sebagai foto.jpg.
+       Jika tidak ada, inisial tampil. -->
+  <div class="avatar">
+    <span>NK</span>
+    <img src="dhe.jpg" alt="Foto profil"
+      onerror="this.remove()">
+  </div>
+  <h1>Maulana Adhe Andriansyah</h1>
+  <p class="status">
+    <span id="typing"></span><span class="cursor">|</span>
+  </p>
+  <a href="#contact" class="btn">Hubungi Saya</a>
+</header>
+
+<main>
+  <section id="biodata" class="section">
+    <h2>Biodata saya</h2>
+    <div class="biodata">
+      <div class="info-item">
+        <i class="fa-solid fa-user"></i>
+        <div>
+           <span class="label">Nama Lengkap</span>
+           <p>Maulana Adhe Andriansyah</p>
+        </div>
+    </div>
+     <div class="info-item">
+        <i class="fa-solid fa-calendar-days"></i>
+        <div>
+          <span class="label">Tanggal Lahir</span>      
+          <p>13 Juli 2007</p>
+        </div>
+     </div>  
+     <div class="info-item">        
+        <i class="fa-solid fa-mosque"></i>
+       <div>
+         <span class="label">Agama</span>
+         <p>Islam</p>
+       </div>
+    </div>
+    <div class="info-item">
+         <i class="fa-solid fa-venus-mars"></i>
+      <div>
+         <span class="label">Jenis Kelamin</span>
+         <p>Laki-laki</p>
+      </div>
+   </div>
+      <div class="info-item">
+         <i class="fa-solid fa-earth-asia"></i>
+      <div>
+         <span class="label">Tempat Lahir</span>
+           <p>Kota Mojokerto</p>
+      </div>
+  </div>
+   <div class="info-item">
+         <i class="fa-solid fa-house"></i>
+      <div>
+         <span class="label">Tempat Tinggal</span>
+         <p>Kabupaten Mojokerto</p>
+      </div>
+  </div>
+
+</div>
+  </section>
+  
+      
+
+  <!-- TENTANG SAYA -->
+  <section id="about" class="section">
+    <h2>Tentang Saya</h2>
+    <div class="card">
+      <p>
+        Halo! Saya mahasiswa yang tertarik pada
+        pengembangan web dan teknologi informasi.
+      </p>
+      <!-- Teks tersembunyi -->
+      <div id="moreText" class="more">
+        <p>
+          Saya senang bekerja dalam tim dan
+          memecahkan masalah. Saya sedang
+          mencari kesempatan magang.
+        </p>
+      </div>
+      <button id="moreBtn" class="btn small">
+        Lihat Selengkapnya
+      </button>
+    </div>
+  </section>
+
+  <!-- KEAHLIAN
+       data-level = persen progress bar -->
+  <section id="skills" class="section">
+    <h2>Keahlian</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="skill-head">
+          <span><i class="fa-brands fa-html5"></i>
+            HTML &amp; CSS</span>
+          <span>90%</span>
+        </div>
+        <div class="bar">
+          <div class="fill" data-level="90"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="skill-head">
+          <span><i class="fa-brands fa-js"></i>
+            JavaScript</span>
+          <span>75%</span>
+        </div>
+        <div class="bar">
+          <div class="fill" data-level="75"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="skill-head">
+          <span><i class="fa-solid fa-database"></i>
+            SQL</span>
+          <span>70%</span>
+        </div>
+        <div class="bar">
+          <div class="fill" data-level="70"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="skill-head">
+          <span><i class="fa-solid fa-pen-ruler"></i>
+            UI/UX</span>
+          <span>65%</span>
+        </div>
+        <div class="bar">
+          <div class="fill" data-level="65"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENDIDIKAN -->
+  <section id="education" class="section">
+    <h2>Pendidikan</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>
+          <i class="fa-solid fa-graduation-cap"></i>
+          S1 Sistem Informasi
+        </h3>
+        <p class="muted">
+          Universitas Contoh, 2022 - sekarang
+        </p>
+      </div>
+      <div class="card">
+        <h3>
+          <i class="fa-solid fa-school"></i>
+          SMA Negeri 2 Mojokerto
+        </h3>
+        <p class="muted">Teknik, 2023 - 2026</p>
+      </div>
+      <div class="card">
+        <h3>
+          <i class="fa-solid fa-school"></i>
+          SMP Taman Siswa Mojokerto
+        </h3>
+        <p class="muted"> 2020 - 2023</p>
+      </div>
+      <div class="card">
+        <h3>
+          <i class="fa-solid fa-school"></i>
+          SD mlirip 1 Kabupaten Mojokerto
+        </h3>
+        <p class="muted">Teknik, 2014 - 2020</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENGALAMAN -->
+  <section id="experience" class="section">
+    <h2>Pengalaman</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>
+          <i class="fa-solid fa-laptop-code"></i>
+          Web Developer Freelance
+        </h3>
+        <p class="muted">2023 - sekarang</p>
+        <p>Membuat website untuk UMKM lokal.</p>
+      </div>
+      <div class="card">
+        <p class="muted">2022 - 2023</p>
+        <p>Divisi media dan dokumentasi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBI -->
+  <section id="hobby" class="section">
+    <h2>Hobi</h2>
+    <div class="grid hobbies">
+      <div class="card">
+        <i class="fa-solid fa-gamepad"></i>
+        <p>Gaming</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-book-open"></i>
+        <p>Membaca</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-person-running"></i>
+        <p>Olahraga</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-laptop"></i>
+        <p>Coding</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK (ganti link kamu) -->
+  <section id="contact" class="section">
+    <h2>Kontak</h2>
+    <div class="grid">
+      <a class="card contact"
+        href="https://wa.me/0895378552333
+        target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+      </a>
+      <a class="card contact"
+        href="mailto:Adheaja144@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        Email
+      </a>
+      <a class="card contact"
+        href="https://instagram.com/Adhea_ja"
+        target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+        Instagram
+      </a>
+      <a class="card contact"
+        href="https://github.com/username"
+        target="_blank">
+        <i class="fa-brands fa-github"></i>
+        GitHub
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>
+    &copy; <span id="year"></span>
+    Maulana Adhe Andriansyah
+  </p>
+</footer>
+
+<!-- Back To Top -->
+<button id="topBtn" class="top-btn">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
